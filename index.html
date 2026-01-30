@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery list app </title>
+    <title>Grocery Bud</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/items.css">
+    <link rel="stylesheet" href="css/single_item.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <main class="main-container">
+        <section class="section-center">
+            <header class="header">
+                <h1>Grocery Bud</h1>
+            </header>
+
+            <form class="grocery-form" id="groceryForm">
+                <div class="form-control">
+                    <input type="text" id="groceryItem" placeholder="e.g., eggs, bread, milk" required>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-plus"></i> Add Item
+                    </button>
+                </div>
+                <div class="alert" id="alert"></div>
+            </form>
+
+            <section class="grocery-container" id="groceryContainer">
+                <div class="grocery-list" id="groceryList">
+                    
+                </div>
+                
+                <div class="clear-btn-container">
+                    <button class="clear-btn" id="clearBtn">
+                        <i class="fas fa-trash"></i> Clear All
+                    </button>
+                </div>
+            </section>
+        </section>
+    </main>
+
     
+    <script type="module" src="app.js"></script>
 </body>
 </html>
