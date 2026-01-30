@@ -1,13 +1,109 @@
-form {
-  display: flex;
-  gap: 0.5rem;
+.grocery-form {
+    margin-bottom: 40px;
 }
 
-input {
-  flex: 1;
-  padding: 0.5rem;
+.form-control {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
 }
 
-button {
-  cursor: pointer;
+#groceryItem {
+    flex: 1;
+    padding: 16px 20px;
+    border: 1.5px solid #e9ecef;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #f8f9fa;
+    color: #343a40;
+    font-weight: 400;
+}
+
+#groceryItem::placeholder {
+    color: #adb5bd;
+    font-weight: 400;
+}
+
+#groceryItem:focus {
+    outline: none;
+    border-color: #ff9a9e;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(255, 154, 158, 0.1);
+    transform: translateY(-1px);
+}
+
+.submit-btn {
+    padding: 16px 28px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.3px;
+    min-width: 120px;
+    justify-content: center;
+}
+
+.submit-btn:hover {
+    background: #1a252f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(44, 62, 80, 0.15);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.alert {
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 400;
+    display: none;
+    animation: slideDown 0.3s ease;
+    font-size: 14px;
+    margin-top: 16px;
+    border-left: 4px solid;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert.success {
+    display: block;
+    background: #f8f9fa;
+    color: #2c3e50;
+    border-left-color: #ff9a9e;
+    border: 1px solid #e9ecef;
+}
+
+.alert.danger {
+    display: block;
+    background: #fff5f5;
+    color: #dc3545;
+    border-left-color: #dc3545;
+    border: 1px solid #ffe3e3;
+}
+
+.alert.edit {
+    display: block;
+    background: #fff9db;
+    color: #e67700;
+    border-left-color: #ffd43b;
+    border: 1px solid #ffec99;
 }
