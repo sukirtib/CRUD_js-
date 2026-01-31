@@ -31,3 +31,40 @@ const editItem = (id, newText) => {
     }
     return null;
 };
+const deleteItem = (id) => {
+    const initialLength = groceryItems.length;
+    groceryItems = groceryItems.filter(item => item.id !== id);
+    if (groceryItems.length < initialLength) {
+        saveToLocalStorage();
+        return true;
+    }
+    return false;
+};
+
+const toggleComplete = (id) => {
+    const item = groceryItems.find(item => item.id === id);
+    if (item) {
+        item.completed = !item.completed;
+        item.updatedAt = new Date().toISOString();
+        saveToLocalStorage();
+        return item;
+    }
+    return null;
+};
+
+const clearAllItems = () => {
+    groceryItems = [];
+    saveToLocalStorage();
+};
+
+
+export { 
+    groceryItems, 
+    saveToLocalStorage, 
+    getItems, 
+    addItem, 
+    editItem, 
+    deleteItem, 
+    toggleComplete, 
+    clearAllItems 
+};
