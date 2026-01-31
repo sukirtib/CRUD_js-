@@ -1,10 +1,10 @@
-// Single grocery item component
+
 const createGroceryItemElement = (item) => {
     const itemElement = document.createElement('div');
     itemElement.className = 'grocery-item';
     itemElement.dataset.id = item.id;
 
-    // Check if item is completed
+  
     const isCompleted = item.completed ? 'completed' : '';
 
     itemElement.innerHTML = `
@@ -27,5 +27,5 @@ const createGroceryItemElement = (item) => {
     return itemElement;
 };
 
-// Export the function
+
 export { createGroceryItemElement };
