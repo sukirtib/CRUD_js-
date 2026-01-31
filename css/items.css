@@ -17,25 +17,25 @@
 }
 
 .grocery-list::-webkit-scrollbar-track {
-    background: #f5f5f5;
+    background: #F8F4E9; ;
 }
 
 .grocery-list::-webkit-scrollbar-thumb {
-    background: #f8bbd0;
+    background: #BCAAA4;;
     border-radius: 2px;
 }
 
 .clear-btn-container {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid #f5f5f5;
+    border-top: 1px solid #E6DFD1;
 }
 
 .clear-btn {
     padding: 12px 24px;
     background: transparent;
-    color: #e91e63;
-    border: 1px solid #f8bbd0;
+    color: #8D6E63;
+    border: 1px solid #D7CCC8;
     border-radius: 6px;
     font-size: 14px;
     font-weight: 500;
@@ -44,29 +44,30 @@
 }
 
 .clear-btn:hover {
-    background: #fce4ec;
+     background: #F8F4E9;
+     color: #5D4037;
 }
 
 .empty-list {
     text-align: center;
     padding: 48px 20px;
-    color: #9e9e9e;
+    color: #A1887F;;
 }
 
 .empty-list .icon {
     font-size: 36px;
-    color: #f8bbd0;
+    color: #BCAAA4;;
     margin-bottom: 16px;
     display: block;
 }
 
 .empty-list p {
     font-size: 16px;
-    color: #616161;
+    color:  #8D6E63;;
     margin-bottom: 8px;
 }
 
 .small-text {
     font-size: 13px;
-    color: #bdbdbd;
+    color: #BCAAA4;;
 }

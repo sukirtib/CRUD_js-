@@ -2,12 +2,12 @@
     display: flex;
     align-items: center;
     padding: 16px;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #F5F0E1;
     transition: all 0.2s;
 }
 
 .grocery-item:hover {
-    background: #fafafa;
+    background: #F8F4E9;
 }
 
 .item-content {
@@ -30,7 +30,7 @@
 .edit-btn, .delete-btn, .complete-btn {
     background: none;
     border: none;
-    color: #e91e63;
+    color: #8D6E63;
     font-size: 16px;
     cursor: pointer;
     padding: 4px 8px;
@@ -41,21 +41,21 @@
 
 .edit-btn:hover, .delete-btn:hover, .complete-btn:hover {
     opacity: 1;
-    background: #fce4ec;
+    background: #F8F4E9;
 }
 
 .delete-btn {
-    color: #f44336;
+    color: #795548;
 }
 
 .delete-btn:hover {
-    background: #ffebee;
+    background: #FBE9E7;
 }
 
 .complete-btn.completed {
-    color: #4caf50;
+    color: #689F38;
 }
 
 .complete-btn.completed:hover {
-    background: #e8f5e9;
+    background: #F1F8E9;
 }

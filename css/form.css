@@ -15,28 +15,28 @@
     border-radius: 12px;
     font-size: 15px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    background: #f8f9fa;
-    color: #343a40;
+    background: #f8f4e9;
+    color: #5d4037;
     font-weight: 400;
 }
 
 #groceryItem::placeholder {
-    color: #adb5bd;
+    color: #a1887f;
     font-weight: 400;
 }
 
 #groceryItem:focus {
     outline: none;
-    border-color: #ff9a9e;
+    border-color: #8d6e63;
     background: white;
-    box-shadow: 0 0 0 4px rgba(255, 154, 158, 0.1);
+    box-shadow: 0 0 0 4px rgba(141, 110, 99, 0.1);
     transform: translateY(-1px);
 }
 
 .submit-btn {
     padding: 16px 28px;
-    background: #2c3e50;
-    color: white;
+    background: #6d4c41;
+    color: #fffdf5;
     border: none;
     border-radius: 12px;
     font-size: 15px;
@@ -52,9 +52,9 @@
 }
 
 .submit-btn:hover {
-    background: #1a252f;
+    background: #5d4037;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(44, 62, 80, 0.15);
+    box-shadow: 0 6px 20px rgba(93, 64, 55, 0.15);
 }
 
 .submit-btn:active {
@@ -86,24 +86,24 @@
 
 .alert.success {
     display: block;
-    background: #f8f9fa;
-    color: #2c3e50;
-    border-left-color: #ff9a9e;
-    border: 1px solid #e9ecef;
+    background: #F8F4E9; 
+    color: #5D4037; 
+    border-left-color: #8D6E63; 
+    border: 1px solid #E6DFD1; 
 }
 
 .alert.danger {
     display: block;
-    background: #fff5f5;
-    color: #dc3545;
-    border-left-color: #dc3545;
-    border: 1px solid #ffe3e3;
+    background: #FBE9E7; 
+    color: #D84315; 
+    border-left-color: #D84315;
+    border: 1px solid #FFCCBC;
 }
 
 .alert.edit {
     display: block;
-    background: #fff9db;
-    color: #e67700;
-    border-left-color: #ffd43b;
-    border: 1px solid #ffec99;
+    background: #FFF8E1;
+    color: #F57C00; 
+    border-left-color: #FFB74D; 
+    border: 1px solid #FFECB3;
 }
