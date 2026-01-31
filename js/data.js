@@ -21,3 +21,13 @@ const addItem = (itemText) => {
     saveToLocalStorage();
     return newItem;
 };
+const editItem = (id, newText) => {
+    const item = groceryItems.find(item => item.id === id);
+    if (item) {
+        item.text = newText.trim();
+        item.updatedAt = new Date().toISOString();
+        saveToLocalStorage();
+        return item;
+    }
+    return null;
+};
