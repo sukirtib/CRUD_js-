@@ -63,7 +63,19 @@ const resetForm = () => {
     submitBtn.style.background = 'linear-gradient(to right, #6a89cc, #4a69bd)';
     groceryInput.focus();
 };
-
+document.addEventListener('editItem', (e) => {
+    const { id, currentText } = e.detail;
+    
+    isEditMode = true;
+    editId = id;
+    groceryInput.value = currentText;
+    groceryInput.focus();
+    
+    submitBtn.innerHTML = '<i class="fas fa-save"></i> Save Changes';
+    submitBtn.style.background = 'linear-gradient(to right, #00b894, #00a085)';
+    
+    showAlert('Editing item...', 'edit');
+});
 
 
 export { resetForm };
